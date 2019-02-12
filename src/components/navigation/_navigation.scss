@@ -61,6 +61,7 @@
         @include positionAbsoluteCenter;
         list-style: none;
         text-align: center;
+        margin-left: 0;
     }
     &__item {
         margin: 1rem;
