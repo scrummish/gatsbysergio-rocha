@@ -1,0 +1,19 @@
+.utility-center-text{ text-align: center; }
+.utility-margin-top-large{ margin-top: 8rem; }
+.utility-margin-bottom-large{ 
+    margin-bottom: 8rem; 
+
+    @include responsive(tablet-portrait) {
+        margin-bottom: 4rem; 
+    }
+}
+.utility-margin-bottom-small{ margin-bottom: 1rem; }
+.utility-margin-right-small{ margin-right: 2rem; }
+.utility-font-color-pink{ color: $color-pink; }
+.utility-font-color-blue{ color: $color-purple; }
+.utility-font-color-purple{ color: $color-green-light; }
+.utility-remove-decoration{ text-decoration: none; }
+.utility-change-color-and-enlarge{
+    color: $color-blue;
+    font-size: 2rem;
+}
