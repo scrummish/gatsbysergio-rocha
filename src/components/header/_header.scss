@@ -1,0 +1,32 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(
+        to left top, 
+        rgba($color-purple-dark, 0.8),  
+        $color-purple-dark 50%); 
+        // url(../img/moon.jpg);
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+
+    @include responsive(phone) { 
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-container {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    } 
+
+    &__text-and-button-box {
+        @include positionAbsoluteCenter;
+        color: $color-light-blue;
+    } 
+}

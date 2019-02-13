@@ -1,0 +1,42 @@
+.about-section {
+    background-color: $color-off-white;
+    margin-top: -20vh;
+    padding: 20rem 0;
+}
+
+.more-info-section {
+    padding: 20rem 0;
+    background: linear-gradient(to right bottom,
+    $color-purple,  
+    $color-purple-dark);
+    // url(../img/technology.jpg);
+    margin-top: -11rem;
+    transform: skewY(-3.36deg);
+
+    & > * {
+        transform: skewY(3.36deg);
+    }
+
+    @include responsive(tablet-portrait) {
+        padding: 10rem 0;
+    }
+}
+
+.prices-section {
+    background-color: $color-off-white;
+    padding: 20rem 0 15rem 0;
+    margin-top: -10rem;
+
+    @include responsive(tablet-portrait) {
+        padding: 15rem 0 10rem 0;
+    }
+}
+
+.reviews-section {
+    padding: 15rem 0;
+    position: relative;
+
+    @include responsive(tablet-portrait) {
+        padding: 10rem 0;
+    }
+}
