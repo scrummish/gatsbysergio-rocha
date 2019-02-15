@@ -1,10 +1,10 @@
 .navigation {
     &__button {
-        background-color: $color-white;
+        background-color: $color-purple-dark;
         box-shadow: 0 1rem 3rem rgba($color-black, .2);
         height: 7rem;
         width: 7rem;
-        position: fixed;
+        position: absolute;
         top: 5.5rem;
         right: 5.5rem;
         border-radius: 50%;
@@ -30,7 +30,7 @@
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
-        position: fixed;
+        position: absolute;
         top: 6rem;
         right: 6rem;
         background-image: radial-gradient($color-purple-solid, $color-purple-dark);
@@ -109,7 +109,7 @@
         &::after {
             width: 3rem;
             height: 2px;
-            background-color: $color-black;
+            background-color: $color-white;
             display: inline-block;
         }
 

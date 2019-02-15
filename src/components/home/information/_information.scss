@@ -1,0 +1,49 @@
+.more-info-section {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom,
+        rgba($color-blue, .7),  
+        $color-purple-dark), 
+        url(../images/tech.jpg);
+    margin-top: -11rem;
+    transform: skewY(-3.36deg);
+
+    & > * {
+        transform: skewY(3.36deg);
+    }
+
+    @include responsive(tablet-portrait) {
+        padding: 10rem 0;
+    }
+}
+
+.info-box {
+    background-color: rgba($color-white, .75);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+    min-height: 30rem;
+
+    @include responsive(tablet-portrait) {
+        padding: 2rem;
+        min-height: 20rem;
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        background-image: linear-gradient(to right, $color-purple, $color-purple-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-portrait) {
+            margin: 0;
+        }
+    }
+}
