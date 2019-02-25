@@ -38,9 +38,12 @@
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
-        background-image: linear-gradient(to right, $color-purple, $color-purple-dark);
-        -webkit-background-clip: text;
-        color: transparent;
+        // background-image: linear-gradient(to right, $color-purple, $color-purple-dark);
+        // -webkit-background-clip: text;
+        // color: transparent;
+        // color: $color-blue;
+        color: $color-pink-dark;
+        padding: .5rem;
 
         @include responsive(tablet-portrait) {
             margin: 0;
