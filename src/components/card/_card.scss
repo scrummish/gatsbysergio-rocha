@@ -1,0 +1,195 @@
+.card {
+    // For card functionality
+    position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem;
+    
+    // For front side of card
+    &__pic {
+        background-size: cover;
+        background-blend-mode: hue;
+        height: 23rem;
+        position: relative;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+
+        &--logo {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 100%;
+        }
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-blue, $color-blue-dark), url(../img/esports.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-purple-solid, $color-purple-solid-dark), url(../img/space.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-pink, $color-pink-dark), url(../img/realestate.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        position: absolute;
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 300;
+        top: 12rem;
+        right: 2rem;
+        width: 80%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-blue,.85), rgba($color-blue-dark,.85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.85), rgba($color-purple-solid-dark,.85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-pink,.85), rgba($color-pink-dark,.85));
+        }
+    }
+
+    &__detail {
+        color: $color-base-font;
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-light-grey;
+                }
+            }
+        }
+    }
+    
+    &__face {
+        position: absolute;
+        color: white;
+        height: 50rem;
+        font-size: 2rem;
+        transition: all .8s ease;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background: linear-gradient(to right bottom, $color-blue, $color-blue-dark);
+            }
+
+            &-2 {
+                background: linear-gradient(to right bottom, $color-purple-solid, $color-purple-solid-dark);
+            }
+
+            &-3 {
+                background: linear-gradient(to right bottom, $color-pink, $color-pink-dark);
+            }
+        }
+    }
+
+    &:hover &__face--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__face--back {
+        transform: rotateY(0);
+    }
+
+    // Back side of card
+    &__action-box {
+        @include positionAbsoluteCenter;
+        width: 90%;
+        text-align: center;
+    }
+
+    &__action-sub-box {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: $color-white;
+    }
+
+    &__action-heading {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__action-sub-heading {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+    @include responsive(tablet-portrait) {
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        
+        &__face {
+            position: relative;
+            height: auto;
+            box-shadow: none;
+
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        &__detail {
+            padding: 1rem 3rem;
+        }
+
+        &:hover &__face--front {
+            transform: rotateY(0);
+        }
+
+        &__action-box {
+            text-align: center;
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            padding: 7rem 4rem 4rem 4rem;
+        }
+
+        &__action-sub-box {
+            margin-bottom: 2rem;
+        }
+
+        &__action-sub-heading {
+            font-size: 4rem;
+        }
+    }
+}
