@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Navigation from "../components/navigation"
 import AboutSection from "../components/home/about"
 import InformationSection from "../components/home/information"
+import PortfolioSection from "../components/home/portfolio"
 import "../styles/main.scss"
 
 const IndexPage = () => (
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Navigation/>
     <AboutSection/>
     <InformationSection/>
+    <PortfolioSection/>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}

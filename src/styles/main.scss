@@ -12,6 +12,10 @@
 
 @import 'pages/home';
 
+@import '../components/card/card';
+@import '../components/cardspopup/popup';
+
 @import '../components/navigation/navigation';
 @import '../components/home/about/about';
 @import '../components/home/information/information';
+@import '../components/home/portfolio/portfolio';
