@@ -7,17 +7,19 @@ import SEO from "../components/seo"
 
 import Navigation from "../components/navigation"
 import AboutSection from "../components/home/about"
+import FooterSection from "../components/home/footer"
 import InformationSection from "../components/home/information"
 import PortfolioSection from "../components/home/portfolio"
 import "../styles/main.scss"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Sergio Rocha" keywords={[`gatsby`, `application`, `react`]} />
     <Navigation/>
     <AboutSection/>
     <InformationSection/>
     <PortfolioSection/>
+    <FooterSection/>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}
