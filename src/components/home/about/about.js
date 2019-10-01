@@ -5,16 +5,16 @@ import frontendPic from "./frontend.png";
 
 const About = () => {
   return (
-    <section class="about-section" id="about-me-section">
-      <div class="utility-center-text utility-margin-bottom-large">
-        <h2 class="secondary-heading">WHO AM I</h2>
+    <section className="about-section" id="about-me-section">
+      <div className="utility-center-text utility-margin-bottom-large">
+        <h2 className="secondary-heading">WHO AM I</h2>
       </div>
-      <div class="row">
-        <div class="col-1-of-2">
-          <h3 class="tertiary-heading utility-margin-bottom-small">
+      <div className="row">
+        <div className="col-1-of-2">
+          <h3 className="tertiary-heading utility-margin-bottom-small">
             Coding Aficionado, Pro Gamer, Dad
           </h3>
-          <p class="paragraph">
+          <p className="paragraph">
             Just a couple things I love<br></br>
             Coding!<br></br>
             Competing in fighting games!<br></br>
@@ -30,34 +30,35 @@ const About = () => {
             many other great players and lead me to all my tournament wins. My current
             passion in the web and creating content for it!
           </p>
-          <h3 class="tertiary-heading utility-margin-bottom-small">100% CSS</h3>
-          <p class="paragraph">
+          <h3 className="tertiary-heading utility-margin-bottom-small">100% CSS</h3>
+          <p className="paragraph">
             All the animation and interactivity on this page is done with 100%
             CSS, no JavaScript at all. Check out the source code!
           </p>
           <a
-            class="btn-text"
+            className="btn-text"
             href="https://github.com/scrummish/css-float-layout"
             target="_blank"
+            rel="noopener noreferrer"
           >
             See the code &rarr;
           </a>
         </div>
-        <div class="col-1-of-2">
-          <div class="composition">
+        <div className="col-1-of-2">
+          <div className="composition">
             <img
-              alt="Photo Google"
-              class="composition__photo composition__photo--1"
+              alt="Google"
+              className="composition__photo composition__photo--1"
               src={reactPic}
             />
             <img
-              alt="Photo SEO"
-              class="composition__photo composition__photo--3"
+              alt="SEO"
+              className="composition__photo composition__photo--3"
               src={frontendPic}
             />
             <img
-              alt="Photo Gizmos"
-              class="composition__photo composition__photo--2"
+              alt="Gizmos"
+              className="composition__photo composition__photo--2"
               src={nodePic}
             />
           </div>

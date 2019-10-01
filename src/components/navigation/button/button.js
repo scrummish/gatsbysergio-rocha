@@ -6,7 +6,7 @@ const Button = () => (
             id="nav-toggle"
             type="checkbox"/> 
         <label className="navigation__button"
-            for="nav-toggle">
+            htmlFor="nav-toggle">
             <span className="navigation__icon">&nbsp;</span>
         </label>
     </>

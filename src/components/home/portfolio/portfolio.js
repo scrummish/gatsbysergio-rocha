@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../card";
-import Popup from "../../cardspopup";
+// import Popup from "../../cardspopup";
 
 const WORK = [
     {
@@ -33,17 +33,14 @@ const WORK = [
 
 const PortfolioSection = () => {
     return (
-        <section class="prices-section" id="portfolio-section">
-            <div class="utility-center-text utility-margin-bottom-large">
-                <h2 class="secondary-heading">Portfolio</h2>
+        <section className="prices-section" id="portfolio-section">
+            <div className="utility-center-text utility-margin-bottom-large">
+                <h2 className="secondary-heading">Portfolio</h2>
             </div>
-            <div class="row">
+            <div className="row">
                 {WORK.map((obj,index)=> {
                     return (
-                        <>
-                            <Card title={obj.title} github={obj.github} index={index+1} detail={obj.detail} url={obj.url}/>
-                            {/* <Popup title={obj.title} i={index+1} tech={obj.tech} about={obj.about} url={obj.url}/> */}
-                        </>
+                        <Card key={obj.url} title={obj.title} github={obj.github} index={index+1} detail={obj.detail} url={obj.url}/>
                     ) 
                 })}   
             </div>
@@ -52,3 +49,5 @@ const PortfolioSection = () => {
 }
 
 export default PortfolioSection;
+
+/* <Popup title={obj.title} i={index+1} tech={obj.tech} about={obj.about} url={obj.url}/> */

@@ -26,7 +26,7 @@ const navLinks = [
 const Navigation = () => (
   <div className="navigation">
     <Button/>
-    <div class="navigation__background">
+    <div className="navigation__background">
       &nbsp;
     </div>
     <nav className="navigation__nav">

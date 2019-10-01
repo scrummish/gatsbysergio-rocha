@@ -5,7 +5,7 @@ const Link = ({name, hash}) => (
     <li className="navigation__item">
         <a className="navigation__link"
             href={hash}
-            onclick="ui.toggleNavButton()">{name}</a> 
+            >{name}</a> 
     </li>
 )
 

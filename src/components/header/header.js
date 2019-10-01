@@ -4,13 +4,13 @@ import "./_header.scss"
 
 const Header = () => {
     return (
-        <header class="header">
-            <div class="header__logo-container">
-            <p class="logo">&lt;/&gt;</p>
+        <header className="header">
+            <div className="header__logo-container">
+            <p className="logo">&lt;/&gt;</p>
             </div>
-            <div class="header__text-and-button-box utility-center-text">
-            <h1 class="primary-heading"><span class="primary-heading--main">Sergio Rocha</span> <span class="primary-heading--sub"><span class="utility-font-color-blue">Fullstack web developer</span> <span class="utility-change-color-and-enlarge">|</span>
-            <span class="utility-font-color-pink"> pro gamer</span> <span class="utility-change-color-and-enlarge">|</span> <span class="utility-font-color-purple">artist</span></span></h1>
+            <div className="header__text-and-button-box utility-center-text">
+            <h1 className="primary-heading"><span className="primary-heading--main">Sergio Rocha</span> <span className="primary-heading--sub"><span className="utility-font-color-blue">Fullstack web developer</span> <span className="utility-change-color-and-enlarge">|</span>
+            <span className="utility-font-color-pink"> pro gamer</span> <span className="utility-change-color-and-enlarge">|</span> <span className="utility-font-color-purple">artist</span></span></h1>
             </div>
         </header>
     )
