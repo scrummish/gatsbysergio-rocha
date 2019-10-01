@@ -16,7 +16,7 @@ const Card = ({title,github,index,detail,url}) => {
                             {detail.map((item)=>{
                                 return <li key={item}>{item}</li>;
                             })}
-                        </ul>className
+                        </ul>
                     </div>
                 </div>
                 <div className={backgroundcolor} >
