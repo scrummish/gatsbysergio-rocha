@@ -12,7 +12,7 @@ const About = () => {
       <div className="row">
         <div className="col-1-of-2">
           <h3 className="tertiary-heading utility-margin-bottom-small">
-            Coding Aficionado, Pro Gamer, Dad
+            Developer, Pro Gamer, Dad
           </h3>
           <p className="paragraph">
             Just a couple things I love<br></br>
@@ -32,8 +32,7 @@ const About = () => {
           </p>
           <h3 className="tertiary-heading utility-margin-bottom-small">100% CSS</h3>
           <p className="paragraph">
-            All the animation and interactivity on this page is done with 100%
-            CSS, no JavaScript at all. Check out the source code!
+            All the animation and interactivity on this page is done with CSS. 
           </p>
           <a
             className="btn-text"

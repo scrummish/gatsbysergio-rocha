@@ -4,8 +4,12 @@ import PropTypes from "prop-types"
 const Link = ({name, hash}) => (
     <li className="navigation__item">
         <a className="navigation__link"
-            href={hash}
-            >{name}</a> 
+        onClick={()=>{
+            const navButton = document.getElementById("nav-toggle");
+            navButton.click();
+        }}
+        href={hash}
+        >{name}</a> 
     </li>
 )
 
