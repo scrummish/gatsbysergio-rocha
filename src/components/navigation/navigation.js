@@ -12,10 +12,10 @@ const navLinks = [
     name: "Portfolio",
     hash: "#portfolio-section"
   },
-  {
-    name: "Reviews",
-    hash: "#reviews-section"
-  },
+  // {
+  //   name: "Reviews",
+  //   hash: "#reviews-section"
+  // },
   {
     name: "Contact",
     hash: "#contact"
